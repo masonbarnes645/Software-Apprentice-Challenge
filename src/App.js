@@ -5,8 +5,11 @@ import Card from './Card';
 
 function App() {
   const [advertisements, setAdvertisements] = useState([])
-  const [displayAds, setDisplayAds] = useState([])
+  // state to hold full list of advertisements
   const [filteredAds, setFilteredAds] = useState([])
+  // state to hold the list of advertisements filtered based on the search term (before sorting)
+  const [displayAds, setDisplayAds] = useState([])
+  // state to hold the list of advertisements currently displayed after filtering and sorting
   const [sortState, setSortState] = useState('none')
   const [searchTerm, setSearchTerm] = useState('')
 
