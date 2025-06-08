@@ -135,7 +135,7 @@ function App() {
     <>
       <input
         type="text"
-        placeholder="Search ads..."
+        placeholder="Search by campaign..."
         value={searchTerm}
         onChange={(e) => handleSearch(e.target.value)}
       />
