@@ -138,8 +138,9 @@ function App() {
         placeholder="Search by campaign..."
         value={searchTerm}
         onChange={(e) => handleSearch(e.target.value)}
+        style={{padding:'10px'}}
       />
-      <button onClick={toggleSort}> Sort by Spend: {sortState === 'none' ? 'Off' : sortState === 'desc' ? 'Descending' : 'Ascending'} </button>
+      <button onClick={toggleSort} style={{padding:'10px'}}> Sort by Spend: {sortState === 'none' ? 'Off' : sortState === 'desc' ? 'Descending' : 'Ascending'} </button>
       <div className="App">
         {displayAds.map(ad => <Card key={`${ad.campaign}-${ad.adset}-${ad.creative}`} {...ad} />)}
       </div>
